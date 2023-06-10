@@ -1,0 +1,42 @@
+{
+  "key": {
+    "publicKeyJwk": {
+      "kty": "EC",
+      "crv": "P-256",
+      "alg": "HPKE-B0",
+      "x": "WjgdtCU4s8AAgAx3ZA_fMIIa6NN6fGooXMWsXBsbPnY",
+      "y": "rCjqEugmkDY8WH3-qk10QNsTOUSWbody9v_tGAdodiw",
+      "use": "enc",
+      "key_ops": [
+        "deriveBits"
+      ]
+    },
+    "privateKeyJwk": {
+      "kty": "EC",
+      "crv": "P-256",
+      "alg": "HPKE-B0",
+      "x": "WjgdtCU4s8AAgAx3ZA_fMIIa6NN6fGooXMWsXBsbPnY",
+      "y": "rCjqEugmkDY8WH3-qk10QNsTOUSWbody9v_tGAdodiw",
+      "d": "NTKEt_QT8bjmwVTI8Bos1vIz3aiEm-9GQpJdOPZ7xNM",
+      "key_ops": [
+        "deriveBits"
+      ]
+    }
+  },
+  "envelop": {
+    "unprotected": {
+      "jwk": {
+        "kty": "EC",
+        "crv": "P-256",
+        "alg": "HPKE-B0",
+        "key_ops": [
+          "deriveBits"
+        ],
+        "x": "w3GyLtgyyf2xBr5qpMfaX5WiBFlOICaReg9twh81Fcs=",
+        "y": "Duhzstlkr5OZXgQYMCQaH9KJWliK1+Gdlmpdd4QSBBo="
+      },
+      "enc": "A128GCM"
+    },
+    "ciphertext": "OR2tg3S7Th71HUul66rQ6NIcD9qVXfvoK4jE"
+  }
+}

@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 (async ()=>{
   const hpke = require('..').default
   const k = await hpke.generate(hpke.TBD_0)
@@ -7,4 +9,5 @@
   const d = await hpke.decrypt(c, k.privateKeyJwk)
   const rpt = new TextDecoder().decode(d)
   console.log(rpt === pt)
+  fs.writeFileSync('example.json', JSON.stringify({key: k, envelop: c}, null, 2))
 })()
