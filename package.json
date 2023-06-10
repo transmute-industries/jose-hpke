@@ -18,6 +18,8 @@
     "clean": "rm -rf ./dist",
     "prebuild": "npm run clean",
     "build": "tsc -b",
+    "build:2": "ncc build -m src/test2.ts -o dist2",
+    "build:2:test": "node ./dist2/index.js",
     "test": "jest",
     "coverage": "jest --ci --coverage",
     "shove": "npm run build; git add -A; git commit -m ':rocket:'; git push origin main"
@@ -41,6 +43,7 @@
     "@types/jest": "^29.2.6",
     "@typescript-eslint/eslint-plugin": "^5.47.1",
     "@typescript-eslint/parser": "^5.47.1",
+    "@vercel/ncc": "^0.36.1",
     "eslint": "^8.30.0",
     "jest": "^29.3.1",
     "ts-jest": "^29.0.3",
