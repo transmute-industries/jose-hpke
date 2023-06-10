@@ -1,4 +1,4 @@
-import hpke from '..'
+import hpke from '../src'
 
 it('sanity', async () => {
   const k = await hpke.generate(hpke.TBD_0)
